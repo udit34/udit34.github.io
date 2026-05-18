@@ -22,14 +22,14 @@
             border-bottom: 1px solid #21262d;
         }
         h1 { color: #58a6ff; font-size: 2.5rem; margin-bottom: 10px; }
-        .subtitle { color: #8b949e; font-size: 1.2rem; font-weight: 400; }
+        .subtitle { color: #8b949e; font-size: 1.1rem; font-weight: 400; }
         
         /* Social Links */
         .links { margin-top: 15px; }
         .links a {
             color: #58a6ff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 12px;
             font-weight: bold;
         }
         .links a:hover { text-decoration: underline; }
@@ -39,7 +39,7 @@
         h2 { color: #f0f6fc; border-bottom: 1px solid #21262d; padding-bottom: 8px; margin-bottom: 20px; }
         
         /* Skills Grid */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
         .skill-card { background: #161b22; padding: 15px; border-radius: 6px; border: 1px solid #30363d; }
         .skill-card h3 { color: #58a6ff; margin-bottom: 10px; font-size: 1.1rem; }
         .skill-card p { color: #8b949e; font-size: 0.95rem; }
@@ -52,70 +52,71 @@
             border: 1px solid #30363d;
             margin-bottom: 20px;
         }
-        .project-card h3 { color: #58a6ff; margin-bottom: 8px; }
+        .project-card h3 { color: #8b949e; margin-bottom: 8px; }
         .tag {
             display: inline-block;
-            background: #238636;
-            color: #fff;
+            background: #21262d;
+            color: #8b949e;
             font-size: 0.75rem;
             padding: 2px 8px;
             border-radius: 12px;
             margin-right: 5px;
             margin-bottom: 10px;
+            border: 1px solid #30363d;
         }
-        .tag-ml { background: #8957e5; }
-        .project-card p { color: #c9d1d9; font-size: 0.95rem; }
+        .project-card p { color: #8b949e; font-size: 0.95rem; font-style: italic; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>Udit</h1>
-        <p class="subtitle">Aspiring SDE & AI / ML Engineer</p>
+        <h1>Udit Karman</h1>
+        <p class="subtitle">Engineering Student @ Indian Institute of Technology (ISM), Dhanbad</p>
+        <p class="subtitle" style="margin-top: 5px; font-size: 1rem; color: #58a6ff;">Aspiring SDE & AI/ML Engineer</p>
         <div class="links">
             <a href="https://github.com/udit34" target="_blank">GitHub</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">LeetCode</a>
+            <a href="https://www.linkedin.com/in/udit-karman-a75384377/" target="_blank">LinkedIn</a>
         </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate developer focusing on core software engineering, algorithms, and machine learning systems. I love breaking down complex mathematical concepts into clean, high-performance code.</p>
+        <p>I am an engineering student who recently discovered a strong passion for programming. I am at the absolute beginning of my coding journey, eager to transition into the non-core tech space. My current focus is shifting from basic programming fundamentals to deep problem-solving, with the ultimate goal of building software systems and exploring machine learning algorithms.</p>
     </section>
 
     <section id="skills">
-        <h2>Technical Arsenal</h2>
+        <h2>Current Skills & Learning Focus</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <h3>Languages</h3>
-                <p>C++, Python, HTML/CSS</p>
+                <h3>Languages Confirmed</h3>
+                <p>C, Python</p>
             </div>
             <div class="skill-card">
-                <h3>SDE Foundations</h3>
-                <p>Data Structures, Algorithms (DSA), Object-Oriented Programming (OOP)</p>
+                <h3>Active Exploration</h3>
+                <p>C++ fundamentals and Object-Oriented Programming (OOP) concepts.</p>
             </div>
             <div class="skill-card">
-                <h3>Data Science & ML</h3>
-                <p>NumPy, Pandas, Model Architectures</p>
+                <h3>Next Milestones</h3>
+                <p>Data Structures & Algorithms (DSA), Problem Solving on LeetCode, and Data Analysis with NumPy/Pandas.</p>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Featured Projects</h2>
+        <h2>Project Roadmap</h2>
+        <p style="margin-bottom: 20px; color: #8b949e;">Currently building up core engineering foundations. Below are the targets I am actively preparing to develop next:</p>
         
         <div class="project-card">
-            <h3>Project Name 1</h3>
+            <h3>Target 1: Core SDE Application / DSA Repository</h3>
             <span class="tag">C++</span><span class="tag">DSA</span>
-            <p>A brief 2-sentence description of an elegant software engineering or algorithmic project you plan to build or have built.</p>
+            <p>Planned: A centralized repository documenting optimized implementations of fundamental data structures and algorithmic puzzle solutions as I master C++.</p>
         </div>
 
         <div class="project-card">
-            <h3>Project Name 2</h3>
-            <span class="tag tag-ml">Python</span><span class="tag tag-ml">Machine Learning</span>
-            <p>A brief 2-sentence description of a machine learning project, data analysis pipeline, or AI model trained from scratch.</p>
+            <h3>Target 2: Fundamental AI / Data Analysis Script</h3>
+            <span class="tag">Python</span><span class="tag">Data Science</span>
+            <p>Planned: A practical data handling or automation project utilizing Python's scientific stack to clean, analyze, and visualize real-world datasets.</p>
         </div>
     </section>
 </div>
