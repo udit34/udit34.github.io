@@ -3,15 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udit's Portfolio</title>
+    <title>Udit | Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #0d1117; color: #c9d1d9; text-align: center; padding: 50px; }
-        h1 { color: #58a6ff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container { max-width: 850px; margin: 0 auto; }
+        
+        /* Header Section */
+        header {
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #21262d;
+        }
+        h1 { color: #58a6ff; font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { color: #8b949e; font-size: 1.2rem; font-weight: 400; }
+        
+        /* Social Links */
+        .links { margin-top: 15px; }
+        .links a {
+            color: #58a6ff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .links a:hover { text-decoration: underline; }
+
+        /* Section Styling */
+        section { margin: 40px 0; }
+        h2 { color: #f0f6fc; border-bottom: 1px solid #21262d; padding-bottom: 8px; margin-bottom: 20px; }
+        
+        /* Skills Grid */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .skill-card { background: #161b22; padding: 15px; border-radius: 6px; border: 1px solid #30363d; }
+        .skill-card h3 { color: #58a6ff; margin-bottom: 10px; font-size: 1.1rem; }
+        .skill-card p { color: #8b949e; font-size: 0.95rem; }
+
+        /* Project Cards */
+        .project-card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            margin-bottom: 20px;
+        }
+        .project-card h3 { color: #58a6ff; margin-bottom: 8px; }
+        .tag {
+            display: inline-block;
+            background: #238636;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+        .tag-ml { background: #8957e5; }
+        .project-card p { color: #c9d1d9; font-size: 0.95rem; }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Tech Portfolio</h1>
-    <p>Aspiring SDE & AI/ML Engineer</p>
-    <p>Building things from scratch. Stay tuned!</p>
+
+<div class="container">
+    <header>
+        <h1>Udit</h1>
+        <p class="subtitle">Aspiring SDE & AI / ML Engineer</p>
+        <div class="links">
+            <a href="https://github.com/udit34" target="_blank">GitHub</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">LeetCode</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate developer focusing on core software engineering, algorithms, and machine learning systems. I love breaking down complex mathematical concepts into clean, high-performance code.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <p>C++, Python, HTML/CSS</p>
+            </div>
+            <div class="skill-card">
+                <h3>SDE Foundations</h3>
+                <p>Data Structures, Algorithms (DSA), Object-Oriented Programming (OOP)</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Science & ML</h3>
+                <p>NumPy, Pandas, Model Architectures</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        
+        <div class="project-card">
+            <h3>Project Name 1</h3>
+            <span class="tag">C++</span><span class="tag">DSA</span>
+            <p>A brief 2-sentence description of an elegant software engineering or algorithmic project you plan to build or have built.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project Name 2</h3>
+            <span class="tag tag-ml">Python</span><span class="tag tag-ml">Machine Learning</span>
+            <p>A brief 2-sentence description of a machine learning project, data analysis pipeline, or AI model trained from scratch.</p>
+        </div>
+    </section>
+</div>
+
 </body>
 </html>
